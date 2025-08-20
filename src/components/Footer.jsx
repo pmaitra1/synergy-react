@@ -1,4 +1,5 @@
 import React from "react";
+import logo from '../images/synergy_logo.png';
 import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
@@ -22,7 +23,7 @@ const Footer = () => {
           {/* Logo and description */}
           <div>
             <div className="logo-container mb-4 flex items-center space-x-4">
-              <img src="/src/images/synergy_logo.png" alt="Synergy Gulf Logo" className="h-10" />
+              <img src={logo} alt="Synergy Gulf Logo" className="lightning-bolt" />
               <div>
                 <h1 className="footer-main-text text-white text-lg font-bold">SYNERGY GULF</h1>
                 <p className="footer-subtitle text-white text-sm">TRADING & CONTRACTING</p>

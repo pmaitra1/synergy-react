@@ -1,7 +1,7 @@
 // src/components/NavBar.jsx
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-
+import logo from '../images/synergy_logo.png';
 export default function NavBar() {
   const navigate = useNavigate();
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -45,11 +45,8 @@ export default function NavBar() {
             >
               <div className="logo-container">
                 {/* Consider importing the asset: import logo from '../images/synergy_logo.png' */}
-                <img
-                  src="/src/images/synergy_logo.png"
-                  alt="Synergy Gulf logo"
-                  className="lightning-bolt"
-                />
+               <img src={logo} alt="Synergy Gulf Logo" className="lightning-bolt" />
+
                 <div className="text-container">
                   <h1 className="main-text">SYNERGY GULF</h1>
                   <p className="subtitle">TRADING &amp; CONTRACTING</p>
