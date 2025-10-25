@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import CookieConsent from "react-cookie-consent";
 import NavBar from './components/NavBar.jsx';
 import Hero from './components/Hero.jsx';
@@ -101,7 +101,7 @@ function App() {
             >
             We use cookies to enhance your browsing experience, serve personalized ads or content, 
             and analyze our traffic.{" "}
-            <a href="/cookie-policy" className="underline text-yellow-300">Learn more</a>.
+            <Link to="/cookie-policy" className="underline text-yellow-300">Learn more</Link>.
         </CookieConsent>
 
         <Routes>

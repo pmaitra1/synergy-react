@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faUser, faEnvelope, faPhone, faBuilding,
@@ -185,7 +186,8 @@ const Contact = () => {
     className="mt-1"
   />
   <label htmlFor="consent" className="text-sm text-gray-700">
-    I consent to my data being stored and used to respond to this inquiry. Read our <a href="/privacy-policy" className="text-blue-600 underline">Privacy Policy</a>.
+    I consent to my data being stored and used to respond to this inquiry. Read our{" "}
+     <Link to="/privacy-policy" className="text-blue-600 underline">Privacy Policy</Link>.
   </label>
 </div>
 
